@@ -1,0 +1,57 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-primary-1: hsl(0, 100%, 74%);
+    --clr-primary-2: hsl(154, 59%, 51%);
+    --clr-accent: hsl(248, 32%, 49%);
+    --clr-neutral-2: white;
+    --clr-neutral: hsl(246, 25%, 77%);
+    --clr-neutral-dark: hsl(249, 10%, 26%);
+    --font-size-body: 16px;
+    
+}
+body{
+    background-color: var(--clr-primary-1);
+}
+.container{
+    margin: 3em 1em;
+}
+.intro-section{
+    color: var(--clr-neutral-2);
+}
+.description{
+    line-height: 1.6em;
+}
+.btn{
+    color: var(--clr-neutral-2);
+    background-color: var(--clr-accent);
+    outline: none;
+    border: none;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 1.5em 6em;
+}
+.try-btn{
+    margin-bottom: 2em;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.185);
+}
+.free-trial{
+    background-color: var(--clr-primary-2);
+    display: box;
+}
+form{
+    background-color: var(--clr-neutral-2);
+    padding: 1em;
+    
+    border-radius: 0.5em;
+}
+input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-weight: bold;
+}

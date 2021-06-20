@@ -8,16 +8,12 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <section class="intro">
+    <section class="intro-section">
       <h1 class="title">
         Learn to code by watching others
       </h1>
@@ -27,15 +23,18 @@
       </p>   
     </section>
     
-    <section class="inputs">
-      <button class="btn">Try it free 7 days then $20/mo. thereafter</button>
+    <section class="inputs-section">
+      <button class="btn try-btn"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
       <form action="">
-        First Name 
-        Last Name 
-        Email Address
-        Password
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Password">
 
-        Claim your free trial 
+        <button class="btn free-trial">
+          Claim your free trial
+        </button>
+        
 
         By clicking the button, you are agreeing to our Terms and Services
       </form>
@@ -46,7 +45,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Nickil13"  target="_blank">Nicki Lindstrom</a>.
     </p>
   </footer>
 </body>

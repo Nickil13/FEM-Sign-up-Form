@@ -41,17 +41,21 @@ body{
 }
 .free-trial{
     background-color: var(--clr-primary-2);
-    display: box;
+    box-shadow: 0px 4px 0px hsl(154, 57%, 45%);
+    margin-bottom: 1em;
 }
 form{
     background-color: var(--clr-neutral-2);
     padding: 1em;
-    
     border-radius: 0.5em;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.185);
 }
 input{
     width: 100%;
     margin-bottom: 1em;
     padding: 1em;
     font-weight: bold;
+}
+.terms-message{
+    color: var(--clr-neutral);
 }

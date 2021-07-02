@@ -9,15 +9,19 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
     <section class="intro-section">
-      <h1 class="title">
+      <h1 class="intro-title">
         Learn to code by watching others
       </h1>
-      <p class="description">
+      <p>
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
       but understanding how developers think is invaluable.
       </p>   
@@ -25,15 +29,30 @@
     
     <section class="inputs-section">
       <button class="btn try-btn"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
-      <form action="">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email Address">
-        <input type="text" placeholder="Password">
+      <form id="signup-form" name="signupForm">
+        <div class="input-container">
+          <input id="name" type="text" name="name" placeholder="First Name">
+          <img class="error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="error-message"></p>
+        </div>
+        <div class="input-container">
+          <input id="last-name" name="lastName" type="text" placeholder="Last Name">
+          <img class="error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="error-message"></p>
+        </div>
+        <div class="input-container">
+          <input id="email" type="text" name="email" placeholder="Email Address">
+          <img class="error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="error-message"></p>
+        </div>
+        <div class="input-container">
+          <input id="password" type="password" name="password" placeholder="Password">
+          <img class="error-icon" src="images/icon-error.svg" alt="error icon">
+          <p class="error-message"></p>
+        </div>
+        
+        <input type="submit" class="btn free-trial" value="Claim your free trial">
 
-        <button class="btn free-trial">
-          Claim your free trial
-        </button>
         <p class="terms-message">By clicking the button, you are agreeing to our <span class=>Terms and Services</span></p>
 
         
@@ -48,5 +67,7 @@
       Coded by <a href="https://github.com/Nickil13"  target="_blank">Nicki Lindstrom</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
+
 </body>
 </html>

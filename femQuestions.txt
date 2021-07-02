@@ -1,0 +1,5 @@
+questions to ask for FEM:
+1. using absolute positioning versus background image for input icons
+2. input:invalid or custom js? required? 
+3. manually resetting inputs and using event.preventDefault to preserve message?
+4. I took away type=email so that the submit form was able to update accordingly
